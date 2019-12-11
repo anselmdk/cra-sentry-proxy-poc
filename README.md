@@ -4,4 +4,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Get started
 
-run `npm start`
+1. Open a terminal tab and start the client: `npm start`
+2. Open a second terminal tab and start the server: `node src/server.js`
+
