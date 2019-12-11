@@ -18,6 +18,14 @@ function App() {
         >
           Learn React
         </a>
+        <br />
+        <a
+          className="App-link"
+          href="#"
+          onClick={() => { throw "Error triggered!" }}
+        >
+          Trigger Sentry error
+        </a>
       </header>
     </div>
   );
