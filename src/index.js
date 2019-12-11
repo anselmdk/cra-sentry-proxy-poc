@@ -5,7 +5,11 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-Sentry.init({dsn: "https://c3c72996d12b4cdfac24fe1e4900eca8@sentry.io/1854307"});
+Sentry.init({
+  //dsn: "https://c3c72996d12b4cdfac24fe1e4900eca8@sentry.io/1854307",
+  dsn: "http://c3c72996d12b4cdfac24fe1e4900eca8@localhost:8080/1854307",
+  debug: true
+});
 
 ReactDOM.render(<App />, document.getElementById('root'));
 

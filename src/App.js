@@ -7,26 +7,25 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <br />
-        <a
-          className="App-link"
-          href="#"
-          onClick={() => { throw "Error triggered!" }}
+        <img
+          src={logo}
+          className="App-logo"
+          alt="logo"
+          style={{
+            width: '100px',
+            height: '100px'
+          }}
+        />
+        <button
+          style={{
+            fontSize: '30px'
+          }}
+          onClick={e => {
+            throw new Error("Error triggered over proxy!")
+          }}
         >
           Trigger Sentry error
-        </a>
+        </button>
       </header>
     </div>
   );
